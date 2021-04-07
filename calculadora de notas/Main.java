@@ -3,6 +3,7 @@ public class Main
 {
     public static final double min = 6.0;
     
+    //funçao que pega as notas e o nome do aluno e imprime se ele foi reprovado ou nao
     public static void notas(double n1, double n2, String nome){
         double total = 0;
         total = (n1+n2)/2;
@@ -14,8 +15,8 @@ public class Main
         }
     }
 	public static void main(String[] args) {
-		double n1 = 0;
-		double n2 = 0;
+		double n1 = 0; //nota 1
+		double n2 = 0; //nota 2
 		String nome;
 		
 		Scanner ler = new Scanner(System.in);
@@ -26,9 +27,9 @@ public class Main
 		System.out.print("digite a primeira nota do aluno: ");
 		n1 = ler.nextDouble();
 
-        System.out.print("digite a segunda nota do aluno: ");
-        n2 = ler.nextDouble();
+        	System.out.print("digite a segunda nota do aluno: ");
+        	n2 = ler.nextDouble();
 
-		notas(n1, n2, nome);
+		notas(n1, n2, nome); //chama a funçao "notas"
 	}
 }
